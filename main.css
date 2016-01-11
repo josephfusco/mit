@@ -24,7 +24,7 @@ article {
     margin: 0 auto;
     -webkit-border-radius: 7px;
     border-radius: 7px;
-    box-shadow:  0 -4px #fff, 0 4px #ddd;
+    box-shadow:  0 -3px #fff, 0 3px #e3e3e3;
     padding: 2em;
     background: #fff;
 }
