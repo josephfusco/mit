@@ -6,7 +6,9 @@ function getParameterByName(name) {
 }
 
 // get year from query string
-var year = getParameterByName('year');
+var year = parseInt(getParameterByName('year'));
 
 // print year to license
-document.getElementById("year").innerHTML = year;
+if (!isNaN(year)) {
+    document.getElementById("year").innerHTML = year;
+}
