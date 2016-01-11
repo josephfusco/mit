@@ -1,12 +1,18 @@
 @import url("http://fonts.googleapis.com/css?family=Inconsolata");
 html {
     background: #eee;
+    display: table;
+    width: 100%;
+    height: 100%;
 }
 body {
     margin: 0;
     font-family: "Inconsolata", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
     font-size: 1.2em;
     line-height: 1.2em;
+    color: #555;
+    display: table-cell;
+    vertical-align: middle;
 }
 article, footer {
     display: block;
@@ -15,9 +21,10 @@ article, footer {
     width: 80%;
 }
 article {
-    margin: 2.5em auto 0 auto;
-    border: 1px solid;
-    border-color: #ddd #aaa #aaa #ddd;
+    margin: 0 auto;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    box-shadow:  0 -4px #fff, 0 4px #ddd;
     padding: 2em;
     background: #fff;
 }
@@ -30,36 +37,19 @@ article p:first-of-type {
 article p:last-child {
     margin-bottom: 0;
 }
-footer {
-    margin: 0em auto 2em auto;
-    text-align: center;
-}
-footer a {
-    color: #666;
-    text-shadow: 0 1px 1px #fff;
-    text-decoration: none;
-    font-size: .8em;
-    padding: 1em;
-}
 
-/*footer a:before{content: "⏦";  font-size:1.5em; padding-right:.2em; } */
-
-footer a:hover, footer a:focus {
-    color: #111;
-}
 h1 {
     font-weight: normal;
     display: inline;
-    border-bottom: 1px solid black;
     padding: 0 0 3px 0;
     line-height: 36px;
 }
 a {
-    color: #2844FA;
+    color: #6d6be0;
     text-decoration: none;
 }
 a:hover, a:focus {
-    color: #1B29A4;
+    color: #6d6be0;
 }
 a:active {
     color: #000;
@@ -69,17 +59,12 @@ a:active {
     border: 0;
 }
 ::selection {
-    background: #ccc;
+    background: #CCC;
+    color: #000;
 }
 ::-moz-selection {
-    background: #ccc;
-}
-#gravatar {
-    position: relative;
-    float: right;
-    margin-bottom: 1em;
-    margin-left: 1em;
-    border: 1px solid #ddd;
+    background: #CCC;
+    color: #000;
 }
 @media all and (max-width: 500px) {
     article {
